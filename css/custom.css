@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 18px;
+}
+
+.container {
+  border: 1px solid red;
+  margin: auto;
+  width: 375px;
+}
+.container__background {
+  position: relative;
+  background-image: url("../images/bg-main-mobile.png");
+  background-repeat: no-repeat;
+  height: 240px;
+}
+.container__form-section {
+  padding: 90px 24px 45px;
+}
+@media (min-width: 1440px) {
+  .container {
+    width: 1440px;
+    display: flex;
+  }
+  .container__background {
+    background-image: url("../images/bg-main-desktop.png");
+    height: 900px;
+    width: 483px;
+  }
+}
+
+.card-credit-front {
+  width: 288px;
+  height: 160px;
+  color: hsl(0deg, 0%, 100%);
+  padding: 20px;
+  background-image: url("../images/bg-card-front.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 126px;
+  left: 18px;
+  z-index: 1;
+  letter-spacing: 2px;
+}
+@media (min-width: 1440px) {
+  .card-credit-front {
+    width: 450px;
+    height: 247px;
+    padding: 30px;
+  }
+}
+@media (min-width: 1440px) {
+  .card-credit-front {
+    top: 187px;
+    left: 167px;
+  }
+}
+.card-credit-front__logo {
+  width: 55px;
+  margin-bottom: 30px;
+}
+.card-credit-front__number {
+  margin-bottom: 15px;
+}
+.card-credit-front__details {
+  display: flex;
+  font-size: 0.6em;
+  justify-content: space-between;
+  text-transform: uppercase;
+}
+@media (min-width: 1440px) {
+  .card-credit-front__logo {
+    width: 86px;
+    margin-bottom: 55px;
+  }
+  .card-credit-front__number {
+    font-size: 1.6em;
+    margin-bottom: 25px;
+  }
+  .card-credit-front__details {
+    display: flex;
+    font-size: 0.8em;
+    justify-content: space-between;
+    text-transform: uppercase;
+  }
+}
+
+.card-credit-back {
+  width: 288px;
+  height: 160px;
+  color: hsl(0deg, 0%, 100%);
+  padding: 20px;
+  background-image: url("../images/bg-card-back.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 30px;
+  left: 75px;
+}
+@media (min-width: 1440px) {
+  .card-credit-back {
+    width: 450px;
+    height: 247px;
+    padding: 30px;
+  }
+}
+@media (min-width: 1440px) {
+  .card-credit-back {
+    top: 468px;
+    left: 257px;
+  }
+}/*# sourceMappingURL=custom.css.map */

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <link rel="icon" type="image/png" sizes="32x32"
+      href="./images/favicon-32x32.png">
+
+    <title>Frontend Mentor | Interactive card details form</title>
+
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  </head>
+  <body>
+
+    <div class="container">
+      <section class="container__background">
+        <div class="card-credit-front">
+          <img
+            src="/images/card-logo.svg"
+            alt=""
+            class="card-credit-front__logo">
+          <p class="card-credit-front__number">0000 0000 0000 0000</p>
+          <div class="row card-credit-front__details">
+            <div class="col-10">
+              <p>Jane Appleseed</p>
+            </div>
+            <div class="col-2">
+              <p> <span class="card-credit-front__month">00</span>/ <span
+                  class="card-credit__year">00</span> </p>
+            </div>
+          </div>
+        </div>
+        <div class="card-credit-back">
+          <p class="card-credit__cvc">000</p>
+        </div>
+
+
+      </section>
+      <section class="container__form-section">
+        <form action="" class="form">
+          <label for="cardHolder">Cardholder Name</label>
+          <input
+            type="text"
+            name="cardholder"
+            id="cardHolder"
+            class="form__input"
+            placeholder="e.g. Jane Appleseed">
+          <div class="form__cardholder--error error">ERROR</div>
+
+          <label for="cardNumber">Card Number</label>
+          <input
+            type="text"
+            name="cardNumber"
+            id="cardnumber"
+            class="form__input"
+            maxlength="19"
+            placeholder="e.g. 1234 5678 9123 0000">
+          <div class="form__inputNumber--error error">ERROR</div>
+
+
+          <div class="form__date-cvc">
+            <!-- grid -->
+
+            <!-- 1 -->
+            <label for="expDate">Exp. Date
+              (MM/YY)</label>
+            <!-- 2 -->
+            <label for="cvc">CVC</label>
+            <!-- 3 -->
+
+            <div>
+              <input
+                type="text"
+                name="cardMonth"
+                id="cardMonth"
+                class="form__input"
+                placeholder="MM"
+                maxlength="2">
+
+
+
+              <input
+                type="text"
+                name="cardYear"
+                id="cardYear"
+                class="form__input"
+                placeholder="YY"
+                maxlength="2">
+            </div>
+
+            <!-- 4 -->
+            <input
+              type="text"
+              id="cardCVC"
+              name="cardCVC"
+              class="form__input"
+              placeholder="e.g. 123"
+              maxlength="3">
+
+            <!-- 5 -->
+            <div class="form__errors-container">
+              <div class="form__input-mm--error error">ERROR</div>
+              <div class="form__input-yy--error error">ERROR</div>
+            </div>
+
+          </div>
+
+
+          <!-- <div class="row"> 
+            <div class="col-12 mb-3">
+              <label for="formGroupExampleInput" class="form-label">Cardholder
+                Name</label>
+              <input type="text" class="form-control"
+                id="formGroupExampleInput"
+                placeholder="e.g. Jane Appleseed">
+            </div>
+
+            <div class="col-12 mb-3">
+              <label for="formGroupExampleInput2" class="form-label">Card Number</label>
+              <input type="text" class="form-control"
+                id="formGroupExampleInput2"
+                placeholder="e.g. 1234 5678 9123 0000">
+            </div>
+
+
+            <div class="col-6 mb-3">
+              <label for="formGroupExampleInput3" class="form-label">Exp. Date
+                (MM/YY)</label>
+              <div class="row">
+                <input type="text" class="col-6"
+                  id="formGroupExampleInput3"
+                  placeholder="MM">
+                <input type="text" class="col-6"
+                  id=""
+                  placeholder="e.g. 1234 5678 9123 0000">
+              </div>
+            </div>
+          </div> -->
+          <input
+            class="form__submit"
+            type="submit"
+            value="Confirm">
+        </form>
+      </section>
+    </div>
+
+    <section class="thanks-section">
+      <img class="thanks-section__img" src="/images/icon-complete.svg" alt="">
+      <h1 class="thanks-section__title">Thank you!</h1>
+      <p class="thanks-section__text">We've added your card details</p>
+      <button class="thanks-section__button">Continue</button>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Felipe Bastidas</a>.
+    </div>
+  </body>
+</html>

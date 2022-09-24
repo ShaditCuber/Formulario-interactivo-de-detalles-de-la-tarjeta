@@ -1,0 +1,82 @@
+@use 'variables' as v;
+@use 'initial';
+@use 'mixins';
+
+
+
+.container {
+    border: 1px solid red;
+    margin: auto;
+    width: 375px;
+
+    &__background {
+        position: relative;
+        background-image: url('../images/bg-main-mobile.png');
+        background-repeat: no-repeat;
+        height: 240px;
+    }
+
+    &__form-section {
+        // Arriba / lados / abajo
+        padding: 90px 24px 45px;
+    }
+
+    @media (min-width : 1440px) {
+        width: 1440px;
+        display: flex;
+
+        &__background {
+            background-image: url('../images/bg-main-desktop.png');
+            height: 900px;
+            width: 483px;
+        }
+    }
+
+}
+
+.card-credit-front {
+    @include mixins.card('../images/bg-card-front.png');
+    @include mixins.card-position(126px, 18px, 187px, 167px);
+    z-index: 1;
+    letter-spacing: 2px;
+
+    &__logo {
+        width: 55px;
+        margin-bottom: 30px;
+    }
+
+    &__number {
+        margin-bottom: 15px
+    }
+
+    &__details {
+        display: flex;
+        font-size: 0.6em;
+        justify-content: space-between;
+        text-transform: uppercase
+    }
+
+    @media (min-width : 1440px) {
+        &__logo {
+            width: 86px;
+            margin-bottom: 55px;
+        }
+
+        &__number {
+            font-size: 1.6em;
+            margin-bottom: 25px
+        }
+
+        &__details {
+            display: flex;
+            font-size: 0.8em;
+            justify-content: space-between;
+            text-transform: uppercase
+        }
+    }
+}
+
+.card-credit-back {
+    @include mixins.card('../images/bg-card-back.png');
+    @include mixins.card-position(30px, 75px, 468px, 257px);
+}
