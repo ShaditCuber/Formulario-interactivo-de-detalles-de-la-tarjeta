@@ -11,7 +11,6 @@ body {
 }
 
 .container {
-  border: 1px solid red;
   margin: auto;
   width: 375px;
 }
@@ -32,7 +31,7 @@ body {
   .container__background {
     background-image: url("../images/bg-main-desktop.png");
     height: 900px;
-    width: 483px;
+    width: 900px;
   }
 }
 
@@ -104,6 +103,7 @@ body {
   position: absolute;
   top: 30px;
   left: 75px;
+  letter-spacing: 2px;
 }
 @media (min-width: 1440px) {
   .card-credit-back {
@@ -117,4 +117,133 @@ body {
     top: 468px;
     left: 257px;
   }
+}
+.card-credit-back__cvc {
+  margin-top: 50px;
+  text-align: right;
+  padding-right: 10px;
+  font-size: 0.7em;
+}
+@media (min-width: 1440px) {
+  .card-credit-back__cvc {
+    font-size: 1em;
+    margin-top: 80px;
+    padding-right: 30px;
+  }
+}
+
+.form__label {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.65em;
+  display: block;
+  margin-bottom: 8px;
+  color: hsl(278deg, 68%, 11%);
+  font-weight: bold;
+}
+.form__input {
+  border: 1px solid hsl(270deg, 3%, 87%);
+  width: 100%;
+  height: 40px;
+  border-radius: 4px;
+  margin-bottom: 18px;
+  font-family: "Space Grotesk", sans-serif;
+  padding-left: 10px;
+  font-size: 1em;
+  outline: none;
+}
+.form__input::-moz-placeholder {
+  color: hsl(270deg, 3%, 87%);
+}
+.form__input:-ms-input-placeholder {
+  color: hsl(270deg, 3%, 87%);
+}
+.form__input::placeholder {
+  color: hsl(270deg, 3%, 87%);
+}
+.form__date-cvc {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0px 16px;
+}
+.form__date {
+  display: flex;
+  gap: 10px;
+}
+.form__submit, .thanks-section__button {
+  background-color: hsl(278deg, 68%, 11%);
+  color: hsl(270deg, 3%, 87%);
+  width: 100%;
+  border-radius: 8px;
+  height: 50px;
+  font-size: 1em;
+  letter-spacing: 1px;
+  font-family: "Space Grotesk", sans-serif;
+}
+.form__submit:hover, .thanks-section__button:hover {
+  cursor: pointer;
+}
+@media (min-width: 1440px) {
+  .form {
+    width: 385px;
+    margin-top: 180px;
+  }
+  .form__input {
+    margin-bottom: 40px;
+  }
+}
+
+.error {
+  color: hsl(0deg, 100%, 66%);
+  margin: -10px 0 18px;
+  font-size: 0.6em;
+}
+@media (min-width: 1440px) {
+  .error {
+    margin: -40px 0 18px;
+  }
+}
+
+.form__errors-container {
+  display: flex;
+  gap: 5px;
+}
+.form__errors-container div {
+  width: 100px;
+  text-align: center;
+}
+
+.thanks-section {
+  display: none;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.thanks-section__img {
+  margin-bottom: 30px;
+}
+.thanks-section__title {
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 4px;
+  color: hsl(278deg, 68%, 11%);
+  margin-bottom: 24px;
+}
+.thanks-section__text {
+  color: hsl(279deg, 6%, 55%);
+  font-size: 1.1em;
+  margin-bottom: 24px;
+}
+@media (min-width: 1440px) {
+  .thanks-section {
+    margin-top: 180px;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
 }/*# sourceMappingURL=custom.css.map */
