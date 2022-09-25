@@ -43,7 +43,7 @@ const thankSection = document.querySelector('.thanks-section');
 nameInput.addEventListener('input', () => {
     hideError(nameInput, nameError);
     if (nameInput.value == '') {
-        nameCard.innerText = 'JANE APPLESEED';
+        nameCard.innerText = 'felipe bastidas';
     } else {
         nameCard.innerText = nameInput.value;
     }
